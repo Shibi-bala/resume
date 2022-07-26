@@ -11,7 +11,7 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
-\input{glyphtounicode}
+%\input{glyphtounicode}
 
 
 %----------FONT OPTIONS----------
@@ -51,7 +51,7 @@
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
-\pdfgentounicode=1
+%\pdfgentounicode=1
 
 %-------------------------
 % Custom commands
@@ -69,7 +69,7 @@
     \end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\activitySubheading}[2]{
+\newcommand{\resumeActivitySubHeading}[2]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
@@ -135,7 +135,7 @@
     \small{\item{
      \textbf{Languages}{: C/C++, Java, Python, JavaScript, TypeScript, HTML/CSS} \\
      \textbf{Tools/Technologies}{: Git, React, Node.js, MongoDB, JUnit, Mockito, Mocha.js, Chai.js, Express.js Flask, Unix/Linux, Bazel, 
-     REST APIs, AWS, GCP, NumPy, SciPy, Pandas,} \\
+     REST APIs, AWS, GCP, NumPy, SciPy, Pandas} \\
     }}
  \end{itemize}
 
@@ -146,11 +146,9 @@
     \resumeSubheading
     {MongoDB}{Software Engineering Intern}{New York City, NY}{June 2022 -- August 2022}
     \resumeItemListStart
-        \resumeItem{Built an automated RFP response system with Google BERT and Elasticsearch to save up to 80% of time
-        for Sales and Product teams}
-        \resumeItem{Designed the RFP solution to give employees quick access to product information while simultaneously
-        collecting data to further train the system}
-        \resumeItem{Prototyped an internal log analysis tool to allow engineers to rapidly address support tickets}
+        \resumeItem{Built a status page to integrate with daily billing system to provide alerting and metrics to stakeholders}
+        \resumeItem{Integrated billing status monitors to work with Atlassian Status Page API and Graphana Metrics}
+        \resumeItem{Created unit and integration tests using Java frameworks such as Mockito and JUnit}
     \resumeItemListEnd
 
     \resumeSubheading
@@ -177,26 +175,14 @@
     \resumeSubheading
       {Commvault Systems Inc.}{Software Engineering Intern}{Tinton Falls, NJ}{May 2020 -- August 2020}
       \resumeItemListStart
-        \resumeItem{Built an automated RFP response system with Google BERT and Elasticsearch to save up to 80% of time
+        \resumeItem{Built an automated RFP response system with Google BERT and Elasticsearch to save up to 80\% of time
         for Sales and Product teams}
         \resumeItem{Designed the RFP solution to give employees quick access to product information while simultaneously
         collecting data to further train the system}
         \resumeItem{Prototyped an internal log analysis tool to allow engineers to rapidly address support tickets}
     \resumeItemListEnd
 
-    \resumeSubheading
-      {Artificial Intelligence Research Assistant}{May 2019 -- July 2019}
-      {Southwestern University}{Georgetown, TX}
-      \resumeItemListStart
-        \resumeItem{Explored methods to generate video game dungeons based off of \emph{The Legend of Zelda}}
-        \resumeItem{Developed a game in Java to test the generated dungeons}
-        \resumeItem{Contributed 50K+ lines of code to an established codebase via Git}
-        \resumeItem{Conducted  a human subject study to determine which video game dungeon generation technique is enjoyable}
-        \resumeItem{Wrote an 8-page paper and gave multiple presentations on-campus}
-        \resumeItem{Presented virtually to the World Conference on Computational Intelligence}
-      \resumeItemListEnd
-
-  \resumeSubHeadingListEnd
+    \resumeSubHeadingListEnd
 
 
 %-----------PROJECTS-----------
@@ -206,7 +192,7 @@
           {\textbf{Lantern} $|$ \emph{React.js, MongoDB, Express.js, Mocha.js/Chai.js, Redux}}{June 2020 -- January 2021}
           \resumeItemListStart
             \resumeItem{Developed a full-stack web app to track finances for small businesses}
-            \resumeItem{Implemented unit and integration tests using Mocha and Chai testing framework}
+            \resumeItem{Implemented unit and integration tests using Mocha and Chai testing frameworks}
             \resumeItem{Created CI/CD system through Github Actions to test, lint, and deploy on code submissions and merges}
           \resumeItemListEnd
 
@@ -229,8 +215,13 @@
 %----------ACTIVITIES----------
 \section{Extracurricular Activities}
   \resumeSubHeadingListStart
-    \activitySubHeading
+    \resumeActivitySubHeading
     {Purdue Undergraduate Teaching Assistant (ECE 264 – Advanced C Programming)}{2021}
+
+\resumeActivitySubHeading
+    {Autonomous Motorsport Purdue}{August 2019 -- May 2021}
+  \resumeSubHeadingListEnd
+  
 
 %-------------------------------------------
 \end{document}
